@@ -30,7 +30,7 @@ void screens::updateResultScreen(double points)
         "|                                                  |\n"
         "|{:^50}|\n"
         "|                                                  |\n"
-        "|--------------------------------------------------|\n", std::format("{} Points", points));
+        "|--------------------------------------------------|\n", std::format("{} Points", points)); // this will center the points line
 }
 
 void screens::displayGameScreen()
