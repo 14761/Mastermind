@@ -23,12 +23,7 @@ private:
         "|                                                  |\n"
         "|--------------------------------------------------|\n";
 
-    std::string resultScreen = "|--------------------------------------------------|\n"
-        "|                     Results                      |\n"
-        "|                                                  |\n"
-        "|                Points                            |\n"
-        "|                                                  |\n"
-        "|--------------------------------------------------|\n";
+    std::string resultScreen;
 
 public:
     void updateGameScreen(std::string correctCheckList, std::string wrongCheckList, std::string guess);

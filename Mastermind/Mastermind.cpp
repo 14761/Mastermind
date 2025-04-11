@@ -23,7 +23,7 @@ int main()
         {
             game myGame(false);
             screens myScreens;
-            do
+            do // will run until either user gets secret code or finish the 8th round
             {
                 myGame.displayCode();
                 myScreens.displayGameScreen();
