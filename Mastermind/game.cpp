@@ -112,7 +112,7 @@ void game::inputGuess()
         std::cout << std::endl;
         if (guessTemp.length() != codeLength)
         {
-            std::cout << "Guess has to be 4 letters longer.\n";
+            std::cout << "Guess must be 4 letters long.\n";
         }
         else if (!(isalpha(guessTemp[0]) && isalpha(guessTemp[1]) && isalpha(guessTemp[2]) && isalpha(guessTemp[3])))
         {
