@@ -30,7 +30,6 @@ int main()
                 myGame.inputGuess();
                 myGame.checkGuess();
                 myScreens.updateGameScreen(myGame.getCorrectCheckList(), myGame.getWrongCheckList(), myGame.getGuess());
-                std::cout << myGame.getRound() << std::endl;
             } while (myGame.getCorrectCheckList()[myGame.getRound() - 1] != '4' && myGame.getRound() != 8);
 
             myScreens.displayGameScreen();
@@ -53,7 +52,6 @@ int main()
                 myGame.inputGuess();
                 myGame.checkGuess();
                 myScreens.updateGameScreen(myGame.getCorrectCheckList(), myGame.getWrongCheckList(), myGame.getGuess());
-                std::cout << myGame.getRound() << std::endl;
             } while (myGame.getCorrectCheckList()[myGame.getRound() - 1] != '4' && myGame.getRound() != 8);
 
             myScreens.displayGameScreen();
