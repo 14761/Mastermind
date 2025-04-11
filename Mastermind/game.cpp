@@ -124,7 +124,7 @@ void game::inputGuess()
         }
         else
         {
-            if (!isRepeat)
+            if (!isRepeat) // if the game is no repeat, this won't allow to repeat letters in the input
             {
                 bool doubleLetter = false;
                 for (int i = 'A'; i <= 'F'; i++)
@@ -167,9 +167,9 @@ void game::inputGuess()
 double game::calculatePoints()
 {
     double points;
-    endTime = std::chrono::system_clock::now();
+    endTime = std::chrono::system_clock::now(); // creates a time stamp
     std::chrono::duration<double> elapsedSeconds = endTime - startTime;
-    if (round == 8 && correctCheckList[round - 1] != '4')
+    if (round == 8 && correctCheckList[round - 1] != '4') // if user doesn't get the secret code, this will run
     {
         points = 0;
     }
