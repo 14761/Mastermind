@@ -32,6 +32,9 @@ int main()
             } while (myGame.getCorrectCheckList()[myGame.getRound() - 1] != '4' && myGame.getRound() != 8);
 
             myScreens.displayGameScreen();
+            std::cout << " Secret Code: ";
+            myGame.displayCode();
+            std::cout << std::endl;
             myScreens.updateResultScreen(myGame.calculatePoints());
             myScreens.displayResultScreen();
 
@@ -53,6 +56,9 @@ int main()
             } while (myGame.getCorrectCheckList()[myGame.getRound() - 1] != '4' && myGame.getRound() != 8);
 
             myScreens.displayGameScreen();
+            std::cout << " Secret Code: ";
+            myGame.displayCode();
+            std::cout << std::endl;
             myScreens.updateResultScreen(myGame.calculatePoints());
             myScreens.displayResultScreen();
 
